@@ -4,9 +4,6 @@
 	"author": "Bartlomiej Tadych (http://n4no.com)",
 	"description": "Block websites easily. Stay focused.",
 	"scripts": {
-		"make": "make-firefox.sh && make-chrome.sh",
-		"make:firefox": "make-firefox.sh",
-		"make:chrome": "make-chrome.sh",
 		"lint": "eslint \"src/**/*.js\" \"platforms/**/*.js\""
 	},
 	"license": "MIT",

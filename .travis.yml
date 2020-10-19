@@ -9,4 +9,5 @@ install:
 
 script:
   - npm run lint
-  - npm run make
+  - bash make-firefox.sh
+  - bash make-chrome.sh
