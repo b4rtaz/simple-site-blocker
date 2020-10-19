@@ -1,0 +1,24 @@
+html, body, h3, h4 {margin: 0; padding: 0;}
+
+html, body {overflow: hidden; min-width: 355px; max-width: 355px; transition: all .25s ease-in-out; color: #000; user-select: none; background: #FFF;}
+
+body, h3, h4 {font: 13px/1em 'Open Sans', Arial, Tahoma, Verdana, Serif;}
+
+.row {display: table; width: 100%;}
+.row .col {display: table-cell; vertical-align: middle; padding: 10px;}
+.row .col.second {width: 1%; text-align: right; white-space: nowrap;}
+.row.secondary {background: #F8F8F8;}
+.row.secondary .col {vertical-align: bottom;}
+
+h3, h4 {margin: 5px 0;}
+h3 {font-weight: normal;}
+h3 img {vertical-align: middle; margin-right: 5px;}
+small {color: #454545;}
+h4 {font-weight: bold;}
+
+.switch-label {display: inline-block; vertical-align: middle; margin: 0 8px;}
+.switch {position: relative; display: inline-block; vertical-align: middle; width: 46px; height: 26px; background: #838383; border-radius: 14px 14px; cursor: pointer; transition: opacity 0.15s;}
+.switch:hover {opacity: 0.8;}
+.switch::after {position: absolute; left: 0; top: 0; margin: 4px; content: ' '; display: block; width: 18px; height: 18px; border-radius: 50% 50%; background: #FFF; transition: left 0.15s;}
+.switch[data-value="1"] {background: #00C92B;}
+.switch[data-value="1"]::after {left: 20px;}

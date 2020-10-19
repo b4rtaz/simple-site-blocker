@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Simple Site Blocker</title>
+	<link href="popup.css" rel="stylesheet" />
+	<script src="api.js"></script>
+	<script src="popup.js"></script>
+</head>
+<body>
+
+	<div class="row">
+		<div class="col">
+			<h3>
+				<img src="./icons/icon-96.png" width="24" height="24" alt="" />
+				Simple Site Blocker
+			</h3>
+		</div>
+		<div class="col second">
+			<label class="switch-label">Enabled</label>
+			<span class="switch" id="enabled-switch"></span>
+		</div>
+	</div>
+
+	<div class="row secondary" id="site-box">
+		<div class="col">
+			<small>Current Site</small>
+			<h4 id="site-name">...</h4>
+		</div>
+		<div class="col second">
+			<label class="switch-label">Blocked</label>
+			<span class="switch" id="site-blocked-switch"></span>
+		</div>
+	</div>
+
+</body>
+</html>

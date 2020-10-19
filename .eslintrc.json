@@ -1,0 +1,15 @@
+{
+	"extends": "eslint:recommended",
+	"rules": {
+		"indent": ["error", "tab"],
+		"semi": ["error", "always"],
+		"quotes": ["error", "single"]
+	},
+	"parserOptions": {
+		"ecmaVersion": 2017
+	},
+	"env": {
+		"es6": true,
+		"browser": true
+	}
+}

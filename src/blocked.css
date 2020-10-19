@@ -1,0 +1,18 @@
+body, h3, h5, p {margin: 0; padding: 0;}
+
+body {font: 13px/1.2em 'Open Sans', Arial, Tahoma, Verdana, Serif;}
+
+html, body {width: 100%; height: 100%; overflow: hidden;}
+body {display: table; color: #000; background: #FFF; user-select: none;}
+a {color: #000; text-decoration: none;}
+a:hover {text-decoration: underline;}
+div.blocked {display: table-cell; vertical-align: middle; text-align: center;}
+
+h3 {display: inline-block; font-size: 100px; line-height: 1.1em; letter-spacing: -0.02em; padding: 40px; border-radius: 20px; font-weight: bold; color: #FFF; background: #F96057;}
+h5 {margin: 30px 0; font-size: 20px; line-height: 1.1em; font-weight: normal;}
+p {position: absolute; right: 20px; bottom: 20px;}
+p img {vertical-align: middle; margin: 0 2px;}
+
+body.inverted {background: #F96057;}
+body.inverted, body.inverted a {color: #FFF;}
+body.inverted h3 {background: #FFF; color: #000;}
