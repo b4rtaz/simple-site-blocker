@@ -10,7 +10,7 @@ This extension DOES NOT contain ads, tracking and premium. Your privacy is most 
 
 ## ⏩ Download for Your Browser
 
-⏩ [Mozilla Firefox](https://addons.mozilla.org/pl/firefox/addon/simplesiteblocker/)<br />
+⏩ [Mozilla Firefox](https://addons.mozilla.org/firefox/addon/simplesiteblocker/)<br />
 ⏩ [Google Chrome](https://chrome.google.com/webstore/detail/simple-site-blocker/akhfampbeegijbknnencolmclbnaceab)
 
 ## ⚙️ How to Build
