@@ -5,14 +5,17 @@
 /* global addOnStorageChangedListener */
 
 async function getConfig() {
+	// // This function should have the same logic as the function from popup.js
 	const config = await readStorage();
 	// Check the extension data to make sure it is not empty.
 	// If an empty object is received, initialize default parameters.
 	if (Object.keys(config).length <= 0) {
-		await writeStorage({
+		const defaultConfig = {
 			enabled: true,
 			blockedHosts: []
-		});
+		};
+		await writeStorage(defaultConfig);
+		return defaultConfig;
 	}
 	
 	return config;
