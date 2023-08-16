@@ -14,9 +14,11 @@ let tabUrl;
 async function getCurrentTabUrl() {
 	const tab = await getActiveTab();
 	const url = new URL(tab.url);
+
 	if (url.protocol === 'https:' || url.protocol === 'http:') {
 		return url;
 	}
+
 	const blockedUrl = new URL(getResourceUrl('blocked.html'));
 	if (url.protocol === blockedUrl.protocol &&
 		url.host === blockedUrl.host &&
@@ -28,6 +30,7 @@ async function getCurrentTabUrl() {
 			return new URL(params.get('url'));
 		}
 	}
+
 	return null;
 }
 
@@ -37,10 +40,16 @@ async function setCurrentTabUrl(url) {
 
 async function getConfig() {
 	const config = await readStorage();
-	return config ? config : {
-		enabled: true,
-		blockedHosts: []
-	};
+	// Check the extension data to make sure it is not empty.
+	// If an empty object is received, initialize default parameters.
+	if (Object.keys(config).length <= 0) {
+		await writeStorage({
+			enabled: true,
+			blockedHosts: []
+		});
+	}
+	
+	return config;
 }
 
 async function updateConfig() {

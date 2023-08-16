@@ -6,10 +6,16 @@
 
 async function getConfig() {
 	const config = await readStorage();
-	return config ? config : {
-		enabled: true,
-		blockedHosts: []
-	};
+	// Check the extension data to make sure it is not empty.
+	// If an empty object is received, initialize default parameters.
+	if (Object.keys(config).length <= 0) {
+		await writeStorage({
+			enabled: true,
+			blockedHosts: []
+		});
+	}
+	
+	return config;
 }
 
 function block(request) {
